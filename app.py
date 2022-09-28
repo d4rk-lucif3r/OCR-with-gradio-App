@@ -34,6 +34,7 @@ with demo:
 
     def fn(img):
         string = ocr(img)
+        print(string)
         return string
 
     web_bt2.click(fn, inputs=[img2], outputs=op)
