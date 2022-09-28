@@ -32,8 +32,8 @@ with demo:
 
     op = gr.components.Textbox(label='Output')
 
-    def fn(video):
-        string = ocr(video)
+    def fn(img):
+        string = ocr(img)
         return string
 
     web_bt2.click(fn, inputs=[img2], outputs=op)
