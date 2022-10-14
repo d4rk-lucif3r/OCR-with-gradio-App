@@ -10,6 +10,10 @@ Interactive demo of OCR using gradio and EasyOCR.
 
 ```python app.py```
 
+## Deployment on TrueFoundry
+
+```python deploy.py```
+
 ## License
 
 MIT License
