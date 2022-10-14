@@ -1,6 +1,6 @@
 # OCR Demo
 
-Interactive demo of OCR using gradio and tesseract.
+Interactive demo of OCR using gradio and EasyOCR.
 
 ## Installation
 

@@ -1,4 +1,7 @@
+import logging
+
 import gradio as gr
+
 from ocr import ocr
 
 #Here we are going to use Gradio Blocks
@@ -35,12 +38,14 @@ with demo:
     def fn(img):
         string = ocr(img)
         print(string)
+        logging.info(string)
         return string
 
     web_bt2.click(fn, inputs=[img2], outputs=op)
     web_bt1.click(fn, inputs=[img1], outputs=op)
 
 try:
+    # demo.queue()
     demo.launch(inline=False, server_name="0.0.0.0",
                 server_port=8080, max_threads=100)
 except Exception as e:
