@@ -43,7 +43,11 @@ with demo:
 
     web_bt2.click(fn, inputs=[img2], outputs=op)
     web_bt1.click(fn, inputs=[img1], outputs=op)
-
+    gr.Markdown("### Made with ❤️ by Arsh using TrueFoundry's Gradio Deployment")
+    gr.Markdown(
+        "### [Github Repo](https://github.com/d4rk-lucif3r/OCR-with-gradio-App)")
+    gr.Markdown(
+        '### [Blog](https://lucif3r4.medium.com/creating-and-deploying-an-ocr-in-python-8b6081663e14)')
 try:
     # demo.queue()
     demo.launch(inline=False, server_name="0.0.0.0",

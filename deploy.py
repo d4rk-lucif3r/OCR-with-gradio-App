@@ -1,5 +1,6 @@
-from servicefoundry import Build, PythonBuild, Resources, Service
 import os
+
+from servicefoundry import Build, PythonBuild, Resources, Service
 
 os.environ["TFY_HOST"] = "https://app.truefoundry.tech/"
 os.environ["TFY_API_KEY"] = "<your-api-key>"  # replace this
