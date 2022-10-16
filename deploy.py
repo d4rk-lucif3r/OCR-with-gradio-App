@@ -2,8 +2,14 @@ import os
 
 from servicefoundry import Build, PythonBuild, Resources, Service
 
+API_KEY = input(f"Find the API Key here: https://app.truefoundry.com/settings")
+
+
 os.environ["TFY_HOST"] = "https://app.truefoundry.tech/"
-os.environ["TFY_API_KEY"] = "<your-api-key>"  # replace this
+
+WORKSPACE = input(f"Set Workspace to deploy to (You can get one from {os.getenv('TFY_HOST')}/workspaces) ")
+
+os.environ["TFY_API_KEY"] = API_KEY 
 
 
 service = Service(
